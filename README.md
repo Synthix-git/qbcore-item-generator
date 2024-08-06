@@ -48,14 +48,19 @@ water_bottle	Water	500	item	water.png	FALSE	TRUE	TRUE	A bottle of water.
 bread	Bread	200	item	bread.png	FALSE	TRUE	FALSE	A loaf of bread.	
 pistol	Pistol	1000	weapon	pistol.png	FALSE	TRUE	TRUE	A standard pistol.	ammo_9mm
 Save the CSV file with the necessary items.
-Upload the CSV File:
 
+Example file with the project.
+
+Upload the CSV File:
 Click "Choose File" and select your CSV file.
+
 The items will be imported and displayed in the list.
 Copy and Manage Items
 Copy Code: Click "Copy" to copy the generated Lua code for all items to your clipboard.
 Undo Last Item: Click "Undo" to remove the last added item from the list.
 Clear List: Click "Clear List" to remove all items from the list.
+
+
 CSV Format Details
 Item Name: Unique identifier for the item.
 Label: Display name for the item.

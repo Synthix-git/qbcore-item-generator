@@ -1,5 +1,3 @@
-# qbcore-item-generator
-
 # QBCore Item List Generator
 
 This project is a web-based application designed to simplify the creation and management of item lists for the QBCore framework used in FiveM servers. The application allows users to add items manually via a form or bulk import items using a CSV file. It also supports specific fields for weapon items, such as `ammoType`.
@@ -25,9 +23,9 @@ Follow these instructions to set up and run the application locally.
 
 1. **Clone the Repository:**
 
+   ```bash
    git clone https://github.com/yourusername/qbcore-item-generator.git
    cd qbcore-item-generator
-   
 Open the Application:
 
 Open the index.html file in your web browser.
@@ -42,8 +40,15 @@ Add the Item:
 
 Click "Add Item" to add the item to the list.
 Bulk Import with CSV
+Prepare the CSV File:
 
-Example CSV alongside the web project.
+Use the following template to create your CSV file:
+Item Name	Label	Weight (grams)	Type	Image	Unique	Usable	Close Inventory	Description	Ammo Type
+water_bottle	Water	500	item	water.png	FALSE	TRUE	TRUE	A bottle of water.	
+bread	Bread	200	item	bread.png	FALSE	TRUE	FALSE	A loaf of bread.	
+pistol	Pistol	1000	weapon	pistol.png	FALSE	TRUE	TRUE	A standard pistol.	ammo_9mm
+Save the CSV file with the necessary items.
+Upload the CSV File:
 
 Click "Choose File" and select your CSV file.
 The items will be imported and displayed in the list.
@@ -51,7 +56,6 @@ Copy and Manage Items
 Copy Code: Click "Copy" to copy the generated Lua code for all items to your clipboard.
 Undo Last Item: Click "Undo" to remove the last added item from the list.
 Clear List: Click "Clear List" to remove all items from the list.
-
 CSV Format Details
 Item Name: Unique identifier for the item.
 Label: Display name for the item.
@@ -63,7 +67,6 @@ Usable: Whether the item can be used (TRUE or FALSE).
 Close Inventory: Whether the inventory should close upon using the item (TRUE or FALSE).
 Description: A brief description of the item.
 Ammo Type: The type of ammunition used for weapons. Leave blank for non-weapon items.
-
 Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue to contribute to this project.
 
